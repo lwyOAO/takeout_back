@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ApifoxUploaderProjectSetting">
+    <option name="apifoxAccessToken" value="APS-SuhjdWDExPOHAuuESGY6YDCI54YX1kkW" />
+    <option name="apifoxApiOverwriteMode" value="智能合并" />
+    <option name="apifoxProjectIds">
+      <array>
+        <option value="# ModuleName:ProjectID" />
+        <option value="itheima:3275037" />
+        <option value="itheima-reggie:3275037" />
+        <option value="reggie_take_out:3275037" />
+        <option value="reigi:3275037" />
+      </array>
+    </option>
+    <option name="yapiTokens" value="" />
+  </component>
+</project>
