@@ -28,7 +28,8 @@ public class LoginCheckFilter implements Filter{
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
-        response.setHeader("Access-Control-Allow-Origin","http://localhost:5173");
+        // http://localhost:5173
+        response.setHeader("Access-Control-Allow-Origin",request.getHeader("Origin"));
         response.setHeader("Access-Control-Allow-Credentials", "true");
         response.setHeader("Access-Control-Allow-Methods", "POST, GET, PATCH, DELETE, PUT");
         response.setHeader("Access-Control-Max-Age", "3600");
@@ -45,8 +46,9 @@ public class LoginCheckFilter implements Filter{
                 "/employee/logout",
                 "/backend/**",
                 "/front/**",
-                "/user/sendMsg",
-                "/user/login"
+                "/user/logout",
+                "/user/login",
+                "/user/register",
         };
 
 
